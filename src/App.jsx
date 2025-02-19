@@ -91,12 +91,13 @@ const App = () => {
     setTeam([...team,newFighter])
     if(money>=newFighter.price){
     setMoney((money-newFighter.price))
+    setTotalStrength((totalStrength+newFighter.strength))
+    setTotalAgility((totalAgility+newFighter.agility))
     }
     else{
       console.log("Not enough money")
     }
-    setTotalStrength((totalStrength+newFighter.strength))
-    setTotalAgility((totalAgility+newFighter.agility))
+   
   }
   
 
